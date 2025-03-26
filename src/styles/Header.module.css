@@ -1,5 +1,124 @@
+/* src/styles/Header.module.css */
 .header {
-  background-color: #f5f5f5;
-  padding: 1rem;
-  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(var(--color-primary));
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.header.scrolled {
+  height: 60px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 0, 0),
+    rgba(255, 255, 0, 0) 20%,
+    rgb(var(--color-secondary)) 40%,
+    rgb(var(--color-secondary)) 60%,
+    rgba(255, 255, 0, 0) 80%,
+    rgba(255, 255, 0, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.header.scrolled::after {
+  opacity: 1;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: var(--text-bold);
+  font-size: 1.5rem;
+  color: rgb(var(--color-text));
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  justify-self: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-menu a {
+  font-family: var(--font-base);
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(var(--color-text));
+  letter-spacing: 1px;
+  padding: 5 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.nav-menu a.active {
+  border-bottom: 1px solid rgb(var(--color-secondary));
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .nav-menu ul {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-menu a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
 }

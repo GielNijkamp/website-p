@@ -1,5 +1,5 @@
 __pycache__/
 *.pyc
-.env
+.env.local
 *.ipynb_checkpoints/
 node_modules/

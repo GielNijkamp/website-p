@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/gieln/code/projects/website/gnijkamp/src/app/blog/layout.tsx"],"sourcesContent":["export default function BlogLayout({ children }: { children: React.ReactNode }) {\r\n  return (\r\n    <section>\r\n      <header>\r\n        <h1>Blog</h1>\r\n      </header>\r\n      {children}\r\n    </section>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAAe,SAAS,WAAW,EAAE,QAAQ,EAAiC;IAC5E,qBACE,8OAAC;;0BACC,8OAAC;0BACC,cAAA,8OAAC;8BAAG;;;;;;;;;;;YAEL;;;;;;;AAGP","debugId":null}}]
+}

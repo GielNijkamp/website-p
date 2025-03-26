@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/globals.css"],"sourcesContent":["/* src/app/globals.css */\r\n@tailwind base;\r\n@tailwind components;\r\n@tailwind utilities;\r\n\r\n@layer base {\r\n  :root {\r\n    /* Color Definitions */\r\n    \r\n    --color-primary: 14 14 26;    /* #0e0e1a */\r\n    --color-secondary: 241 211 1;  /* #f1d301 */\r\n    --color-text: 255 255 255;     /* #ffffff */\r\n    --color-background-dark: 51 51 51;       /* #333 */\r\n    --color-background-light: 255 255 255 0.1;\r\n    --color-border: 255 255 255 0.2;\r\n    --color-overlay: 0 0 0 0.5;\r\n    --color-secondary-rgb: 241, 211, 1;\r\n    --header-height: 70px;\r\n\r\n    /* Font Definitions */\r\n    --font-base: 'Montserrat', sans-serif;\r\n    --font-heading: 'Montserrat', sans-serif;\r\n  }\r\n}"],"names":[],"mappings":"AACA;;AACA;;AACA;;AAEA;EACE"}}]
+}

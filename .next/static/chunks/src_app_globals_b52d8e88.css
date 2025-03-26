@@ -1,0 +1,24 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 14 14 26;
+    --color-secondary: 241 211 1;
+    --color-text: 255 255 255;
+    --color-background-dark: 51 51 51;
+    --color-background-light: 255 255 255 .1;
+    --color-border: 255 255 255 .2;
+    --color-overlay: 0 0 0 .5;
+    --color-secondary-rgb: 241, 211, 1;
+    --header-height: 70px;
+    --font-base: "Montserrat", sans-serif;
+    --font-heading: "Montserrat", sans-serif;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_b52d8e88.css.map*/

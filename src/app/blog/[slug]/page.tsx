@@ -1,8 +1,25 @@
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+import { notFound } from 'next/navigation'
+
+interface PageProps {
+  params: { slug: string }
+}
+
+export default function BlogPostPage({ params }: PageProps) {
+  // Test with hardcoded slugs first
+  const validSlugs = ['post-1', 'post-2']
+  
+  if (!validSlugs.includes(params.slug)) {
+    notFound()
+  }
+
   return (
-    <article>
-      <h2>Blog Post: {params.slug}</h2>
-      <p>Content for the blog post.</p>
-    </article>
-  );
+    <main className="p-4">
+      <h1 className="text-2xl font-bold">
+        Post: {params.slug}
+      </h1>
+      <p className="mt-4">
+        Basic content for {params.slug}
+      </p>
+    </main>
+  )
 }
