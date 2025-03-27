@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import './globals.css'
 import Header from '@/components/Header'
 
@@ -8,9 +9,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-screen bg-primary text-text">
         <Header />
-        <main className="pt-[70px] min-h-screen"> {/* Add padding-top equal to header height */}
+        <main className="min-h-[calc(100vh-var(--header-height))] pt-[var(--header-height)]">
           {children}
         </main>
       </body>

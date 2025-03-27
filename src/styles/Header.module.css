@@ -2,12 +2,17 @@
 .header {
   position: fixed;
   top: 0;
+  left: 0; /* Add this */
+  right: 0; /* Add this */
   width: 100%;
   height: 80px;
   background-color: rgb(var(--color-primary));
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
+  z-index: 1000; /* Ensure header stays on top */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
 }
 
 .header.scrolled {
@@ -43,23 +48,15 @@
   width: 100%;
   max-width: 1400px;
   height: 100%;
-  display: grid;
+  display: flex; /* Changed from grid to flex */
   align-items: center;
+  justify-content: center; /* Center content horizontally */
   padding: 0 2rem;
-}
-
-.logo {
-  font-family: var(--font-heading);
-  font-weight: var(--text-bold);
-  font-size: 1.5rem;
-  color: rgb(var(--color-text));
-  height: 100%;
-  display: flex;
-  align-items: center;
+  margin: 0 auto; /* Center the container */
 }
 
 .nav-menu {
-  justify-self: center;
+  width: 100%;
 }
 
 .nav-menu ul {
@@ -70,6 +67,7 @@
   gap: 1.5rem;
   height: 100%;
   align-items: center;
+  justify-content: center; /* Center nav items */
 }
 
 .nav-menu a {
@@ -78,7 +76,7 @@
   font-size: 1rem;
   color: rgb(var(--color-text));
   letter-spacing: 1px;
-  padding: 5 16px;
+  padding: 5px 16px; /* Fixed padding syntax */
   border-radius: 20px;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -99,26 +97,26 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
-  .header-container {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 1rem;
-    padding: 1rem;
+  .header {
+    height: auto;
+    padding: 1rem 0;
   }
 
-  .nav-menu {
-    grid-column: 1;
-    justify-self: center;
+  .header-container {
+    flex-direction: column;
+    padding: 0 1rem;
   }
 
   .nav-menu ul {
+    flex-direction: column;
     gap: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 1rem 0;
   }
 
   .nav-menu a {
     padding: 8px 12px;
     font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
   }
 }

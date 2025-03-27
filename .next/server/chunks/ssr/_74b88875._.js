@@ -6,18 +6,10 @@ module.exports = {
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "HEADER_HEIGHT": (()=>HEADER_HEIGHT),
-    "HEADER_HEIGHT_SCROLLED": (()=>HEADER_HEIGHT_SCROLLED),
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
 ;
-const HEADER_HEIGHT = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call HEADER_HEIGHT() from the server but HEADER_HEIGHT is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/components/Header.tsx <module evaluation>", "HEADER_HEIGHT");
-const HEADER_HEIGHT_SCROLLED = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call HEADER_HEIGHT_SCROLLED() from the server but HEADER_HEIGHT_SCROLLED is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/components/Header.tsx <module evaluation>", "HEADER_HEIGHT_SCROLLED");
 const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
     throw new Error("Attempted to call the default export of [project]/src/components/Header.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
 }, "[project]/src/components/Header.tsx <module evaluation>", "default");
@@ -28,18 +20,10 @@ const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$pr
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "HEADER_HEIGHT": (()=>HEADER_HEIGHT),
-    "HEADER_HEIGHT_SCROLLED": (()=>HEADER_HEIGHT_SCROLLED),
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
 ;
-const HEADER_HEIGHT = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call HEADER_HEIGHT() from the server but HEADER_HEIGHT is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/components/Header.tsx", "HEADER_HEIGHT");
-const HEADER_HEIGHT_SCROLLED = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call HEADER_HEIGHT_SCROLLED() from the server but HEADER_HEIGHT_SCROLLED is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/components/Header.tsx", "HEADER_HEIGHT_SCROLLED");
 const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
     throw new Error("Attempted to call the default export of [project]/src/components/Header.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
 }, "[project]/src/components/Header.tsx", "default");
@@ -59,6 +43,7 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$c
 
 var { g: global, __dirname } = __turbopack_context__;
 {
+// src/app/layout.tsx
 __turbopack_context__.s({
     "default": (()=>RootLayout)
 });
@@ -71,32 +56,30 @@ function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
         lang: "en",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
+            className: "min-h-screen bg-primary text-text",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 12,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                    className: "pt-[70px] min-h-screen",
-                    children: [
-                        " ",
-                        children
-                    ]
-                }, void 0, true, {
+                    className: "min-h-[calc(100vh-var(--header-height))] pt-[var(--header-height)]",
+                    children: children
+                }, void 0, false, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 13,
+                    lineNumber: 14,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/layout.tsx",
-            lineNumber: 11,
+            lineNumber: 12,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/layout.tsx",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }

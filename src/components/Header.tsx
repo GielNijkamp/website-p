@@ -6,11 +6,16 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import styles from '../styles/Header.module.css'
 
+interface NavLink {
+  name: string
+  path: string
+}
+
 export default function Header() {
   const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
 
-  const links = [
+  const links: NavLink[] = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Blog', path: '/blog' },
@@ -22,21 +27,37 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
+      document.documentElement.style.setProperty(
+        '--header-current-height', 
+        window.scrollY > 10 ? 'var(--header-height-scrolled)' : 'var(--header-height)'
+      )
     }
-    window.addEventListener('scroll', handleScroll)
+    
+    // Initialize on mount
+    handleScroll()
+    
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
+    <header 
+      className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}
+      style={{
+        height: 'var(--header-current-height, var(--header-height))'
+      }}
+    >
       <div className={styles['header-container']}>
-        <nav className={styles['nav-menu']}>
-          <ul>
+        <nav className={styles['nav-menu']} aria-label="Main navigation">
+          <ul role="list">
             {links.map((link) => (
               <li key={link.path}>
                 <Link
                   href={link.path}
-                  className={`${pathname === link.path ? styles.active : ''}`}
+                  className={`${styles['nav-link']} ${
+                    pathname === link.path ? styles.active : ''
+                  }`}
+                  aria-current={pathname === link.path ? 'page' : undefined}
                 >
                   {link.name}
                 </Link>
@@ -48,10 +69,3 @@ export default function Header() {
     </header>
   )
 }
-
-// src/components/Header.tsx
-export const HEADER_HEIGHT = 70;
-export const HEADER_HEIGHT_SCROLLED = 60;
-
-// Then in your layout:
-<main className={`pt-[${HEADER_HEIGHT}px] min-h-screen`}></main>

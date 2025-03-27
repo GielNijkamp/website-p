@@ -3,3 +3,4 @@ __pycache__/
 .env.local
 *.ipynb_checkpoints/
 node_modules/
+.gitignore
