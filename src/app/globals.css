@@ -6,14 +6,12 @@
 @layer base {
   :root {
     /* Color Definitions */    
-    --color-primary: 14 14 26;    /* #0e0e1a */
-    --color-secondary: 241 211 1;  /* #f1d301 */
-    --color-text: 255 255 255;     /* #ffffff */
-    --color-background-dark: 51 51 51;       /* #333 */
-    --color-background-light: 255 255 255 0.1;
-    --color-border: 255 255 255 0.2;
-    --color-overlay: 0 0 0 0.5;
-    --color-secondary-rgb: 241, 211, 1;
+    --color-primary: rgb(14, 14, 26);    /* #0e0e1a */
+    --color-secondary: rgb(241, 211, 1)  /* #f1d301 */
+    --color-text: rgb(255, 255, 255);
+    --color-background-dark: rgb(51, 51, 51);       /* #333 */
+    --color-background-light: rgb(255, 255, 255) 0.1;
+    --color-border: rgb(255, 255, 255) 0.2;
 
     /* Spacing Definitions */
     --header-height: 80px;
@@ -27,31 +25,55 @@
     /* Text Definitions */
         --spacing-xl: 4rem;
         --spacing-lg: 2rem;
-        --color-secondary: #f1d501; /* Geel accent */
         --text-bold: 700;
       
   }
 }
 
+/* Achtergrond container */
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none; /* Zorgt dat kliks door de achtergrond gaan */
+}
+
+/* Content container */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hoofdcontent gebied */
+.main-content {
+  flex: 1;
+  padding-top: 80px; /* Pas aan op basis van je header hoogte */
+  padding-bottom: 60px; /* Pas aan op basis van je footer hoogte */
+}
+
+
 /* Reset default margins */
 body {
   margin: 0;
-  padding: 0;
+  background-color: rgb(var(--color-primary)); /* Your dark background */
   padding-top: var(--header-height);  
   font-family: var(--font-base);
   color: rgb(var(--color-text));
-  background-color: rgb(var(--color-primary));
 }
 
-/* Temporary debug rule */
-body::after {
-  content: 'Header height: ' var(--header-height);
-  position: fixed;
-  bottom: 0;
-  background: red;
-  color: white;
-  z-index: 9999;
+/* Fix for mobile viewport units */
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
 }
+
 
 /* Smooth scrolling for anchor links */
 html {
@@ -71,8 +93,6 @@ html {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('/hero-background.jpg') center/cover no-repeat;
   }
   
   .mission-statement {
@@ -92,7 +112,7 @@ html {
     max-width: 1400px;
     margin: 0 auto;
     padding: var(--spacing-xl) 0;
-    background-color: #0a0a1a62;
+    background-color: rgba(10, 10, 26, 0.58);
   }
   
   .services-section.visible {
@@ -106,7 +126,6 @@ html {
     margin-bottom: var(--spacing-xl);
     padding-top: var(--spacing-xl);
     position: relative;
-    color: var(--color-secondary);
     font-weight: var(--text-bold);
     line-height: 1.2;
   }
@@ -171,11 +190,11 @@ html {
     );
     background-size: 200% 200%;
     -webkit-mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
+      linear-gradient(rgb(255, 255, 255) 0 0) content-box, 
+      linear-gradient(rgb(255, 255, 255) 0 0);
     mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
+      linear-gradient(rgb(255, 255, 255) 0 0) content-box, 
+      linear-gradient(rgb(255, 255, 255) 0 0);
     mask-composite: exclude;
     opacity: 0;
     transition: opacity 0.4s ease;

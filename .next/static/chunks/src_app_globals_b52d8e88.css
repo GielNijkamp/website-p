@@ -7,41 +7,57 @@
 
 @layer base {
   :root {
-    --color-primary: 14 14 26;
-    --color-secondary: 241 211 1;
-    --color-text: 255 255 255;
-    --color-background-dark: 51 51 51;
-    --color-background-light: 255 255 255 .1;
-    --color-border: 255 255 255 .2;
-    --color-overlay: 0 0 0 .5;
-    --color-secondary-rgb: 241, 211, 1;
+    --color-primary: #0e0e1a;
+    --color-secondary: #f1d301   --color-text: #fff;
+    --color-background-dark: #333;
+    --color-background-light: #fff .1;
+    --color-border: #fff .2;
     --header-height: 80px;
     --header-height-scrolled: 60px;
     --font-base: "Montserrat", sans-serif;
     --font-heading: "Montserrat", sans-serif;
     --spacing-xl: 4rem;
     --spacing-lg: 2rem;
-    --color-secondary: #f1d501;
     --text-bold: 700;
   }
 }
 
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
 body {
   margin: 0;
-  padding: 0;
+  background-color: rgb(var(--color-primary));
   padding-top: var(--header-height);
   font-family: var(--font-base);
   color: rgb(var(--color-text));
-  background-color: rgb(var(--color-primary));
 }
 
-body:after {
-  content: "Header height: " var(--header-height);
-  position: fixed;
-  bottom: 0;
-  background: red;
-  color: #fff;
-  z-index: 9999;
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
 }
 
 html {
@@ -58,7 +74,6 @@ html {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  background: linear-gradient(#000000b3, #000000b3), url("/hero-background.jpg") center / cover no-repeat;
 }
 
 .mission-statement {
@@ -77,7 +92,7 @@ html {
   max-width: 1400px;
   margin: 0 auto;
   padding: var(--spacing-xl) 0;
-  background-color: #0a0a1a62;
+  background-color: #0a0a1a94;
 }
 
 .services-section.visible {
@@ -91,7 +106,6 @@ html {
   margin-bottom: var(--spacing-xl);
   padding-top: var(--spacing-xl);
   position: relative;
-  color: var(--color-secondary);
   font-weight: var(--text-bold);
   line-height: 1.2;
 }

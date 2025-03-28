@@ -41,12 +41,13 @@ export default function Header() {
   }, [])
 
   return (
-    <header 
-      className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}
-      style={{
-        height: 'var(--header-current-height, var(--header-height))'
-      }}
-    >
+    <header className={`
+      fixed top-0 w-full 
+      h-[var(--header-current-height,var(--header-height))] 
+      bg-primary/95 backdrop-blur-md 
+      transition-all duration-300 
+      ${isScrolled ? 'shadow-md h-header-scrolled' : 'h-header'}
+    `}>
       <div className={styles['header-container']}>
         <nav className={styles['nav-menu']} aria-label="Main navigation">
           <ul role="list">

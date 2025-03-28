@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/gieln/code/projects/website/gnijkamp/src/components/NeuralNetwork/index.tsx"],"sourcesContent":["\r\n\r\n// components/NeuralNetwork/index.tsx\r\nexport default function NeuralNetwork() {\r\n    return (\r\n      <div>Neural Network Placeholder</div>\r\n    )\r\n  }\r\n  "],"names":[],"mappings":"AAEA,qCAAqC;;;;;;AACtB,SAAS;IACpB,qBACE,8OAAC;kBAAI;;;;;;AAET","debugId":null}}]
+}

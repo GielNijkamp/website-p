@@ -1,6 +1,8 @@
-// src/app/layout.tsx
-import './globals.css'
-import Header from '@/components/Header'
+// app/layout.tsx
+import './globals.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer'; // 👈 Als je een footer hebt
+import NeuralScene from './three/NeuralCore';
 
 export default function RootLayout({
   children,
@@ -9,11 +11,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-primary text-text">
-        <Header />
-        <main className="min-h-[calc(100vh-var(--header-height))] pt-[var(--header-height)]">
-          {children}
-        </main>
+      <body>
+        {/* 1. Three.js Achtergrond - EERSTE in de body! */}
+        <div className="fixed-background">
+          <NeuralScene />
+        </div>
+
+        {/* 2. ALLE Content (header, main, footer) in een wrapper */}
+        <div className="content-wrapper">
+          <Header />
+          
+          <main className="main-content">
+            {children}
+          </main>
+
+          <Footer /> {/* 👈 Voeg deze toe als je een footer hebt */}
+        </div>
       </body>
     </html>
   )

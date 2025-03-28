@@ -2,9 +2,15 @@
   "pages": {
     "/newsletter/page": [
       "static/chunks/src_ba875ba6._.css",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_1aadecf3._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_247d5fa8._.js",
       "static/chunks/node_modules_next_f75aed9e._.js",
-      "static/chunks/src_e170da46._.js",
+      "static/chunks/node_modules_three_build_three_core_df0bde7e.js",
+      "static/chunks/node_modules_three_build_three_module_230a9f89.js",
+      "static/chunks/node_modules_three_build_three_module_90b4155f.js",
+      "static/chunks/node_modules_react-reconciler_25c8ec02._.js",
+      "static/chunks/node_modules_@react-three_fiber_dist_efff49a3._.js",
+      "static/chunks/node_modules_e992688f._.js",
+      "static/chunks/src_ac4bdbf3._.js",
       "static/chunks/src_app_layout_tsx_f0e4c1a2._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_49a6ea35._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",

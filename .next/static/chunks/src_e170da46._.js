@@ -82,10 +82,13 @@ function Header() {
         }
     }["Header.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$styles$2f$Header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header} ${isScrolled ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$styles$2f$Header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].scrolled : ''}`,
-        style: {
-            height: 'var(--header-current-height, var(--header-height))'
-        },
+        className: `
+      fixed top-0 w-full 
+      h-[var(--header-current-height,var(--header-height))] 
+      bg-primary/95 backdrop-blur-md 
+      transition-all duration-300 
+      ${isScrolled ? 'shadow-md h-header-scrolled' : 'h-header'}
+    `,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$styles$2f$Header$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"]['header-container'],
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -101,27 +104,27 @@ function Header() {
                                 children: link.name
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 55,
+                                lineNumber: 56,
                                 columnNumber: 17
                             }, this)
                         }, link.path, false, {
                             fileName: "[project]/src/components/Header.tsx",
-                            lineNumber: 54,
+                            lineNumber: 55,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/Header.tsx",
-                    lineNumber: 52,
+                    lineNumber: 53,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Header.tsx",
-                lineNumber: 51,
+                lineNumber: 52,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Header.tsx",
-            lineNumber: 50,
+            lineNumber: 51,
             columnNumber: 7
         }, this)
     }, void 0, false, {
